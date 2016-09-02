@@ -1,0 +1,24 @@
+[33mcommit f6b465ad990cbf590cd86b7cc0217621679fb997[m
+Author: Alexander Tyler Kamens <kame3531@fredonia.edu>
+Date:   Wed Aug 31 14:50:56 2016 -0400
+
+    My first commit
+
+[33mcommit d41f47104c5712c0baee352fe33ec2fbee786a65[m
+Merge: 6127ccc c6e2aa4
+Author: Professor Raghunath <raghunat@fredonia.edu>
+Date:   Wed Aug 31 14:14:22 2016 -0400
+
+    Merge branch 'master' of https://github.com/raghunat/2016-333-pizza
+
+[33mcommit 6127cccb1f76ce1885b8b4dd81ebef4d9a5ec78a[m
+Author: Professor Raghunath <raghunat@fredonia.edu>
+Date:   Wed Aug 31 14:12:57 2016 -0400
+
+    Init
+
+[33mcommit c6e2aa4bf82be7dd21eb8035cbc9bfd8e0916904[m
+Author: Stephen Raghunath <raghunat@fredonia.edu>
+Date:   Wed Aug 31 13:50:27 2016 -0400
+
+    Initial commit
