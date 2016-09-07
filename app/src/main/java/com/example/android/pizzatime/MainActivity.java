@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void addPizza(View view){
-        TextView counter = (TextView)findViewById(R.id.counter);
-        pizzaCount += 1;
-        counter.setText("" + pizzaCount);
+        //TextView counter = (TextView)findViewById(R.id.counter);
+        //pizzaCount += 1;
+        //counter.setText("" + pizzaCount);
     }
 
     protected void addCheese(View view){
@@ -43,7 +43,16 @@ public class MainActivity extends AppCompatActivity {
         counter.setText("" + soyCount);
     }
 
+    protected void calculateOrder(View view){
+        int cheesePrice = 5;
+        int pepPrice = 6;
+        int soyPrice = 7;
 
+        int total = cheesePrice * cheeseCount + soyPrice * soyCount + pepPrice * pepCount;
+
+        TextView totalTextView = (TextView)findViewById(R.id.order_total);
+        totalTextView.setText("" + total);
+    }
 
 
 }
