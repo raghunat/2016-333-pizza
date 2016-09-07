@@ -18,28 +18,83 @@
         android:background="#000066"
         android:textColor="#fff"
         android:text="Numero de Pizzas" />
-    <TextView
-        android:id="@+id/counter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="36sp"
-        android:layout_marginTop="32dp"
-        android:textAlignment="center"
-        android:text="0" />
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="100dp">
         <ImageView
-            android:layout_width="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/cheese"/>
+            android:src="@drawable/cheese"
+            android:onClick="addCheese" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pepperoni"
+            android:onClick="addPepperoni"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sausage"
+            android:onClick="addSausage"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cheese_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="36sp"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:text="0" />
+        <TextView
+            android:id="@+id/pepperoni_counter"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:text="0" />
+        <TextView
+            android:id="@+id/sausage_counter"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:text="0" />
+
+
     </LinearLayout>
     <Button
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:text="Order"
         android:onClick="addPizza"
         />
+
+    <TextView
+        android:id="@=id/order_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Total"
+        android:textSize="52dp"
+        android:layout_marginTop="16dp"
+        />
 </LinearLayout>
+
+
