@@ -6,6 +6,8 @@ import android.view.View;
 
 import android.widget.TextView;
 
+import java.text.NumberFormat;
+
 public class MainActivity extends AppCompatActivity
 {
     //private int pizzaCount = 0;
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity
         total += soyPrice * soyCount;
 
         TextView totalTextView = (TextView)findViewById(R.id.order_total);
-        totalTextView.setText("" + total);
+        // totalTextView.setText("" + total);
+        NumberFormat defaultFormat = NumberFormat.getCurrencyInstance();
+        totalTextView.setText("" + defaultFormat.format(total));
     }
 }
